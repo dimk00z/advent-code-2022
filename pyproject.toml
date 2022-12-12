@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "advent-code-2022"
+version = "0.1.0"
+description = ""
+authors = ["dimk00z <dimk00z@gmail.com>"]
+readme = "README.md"
+packages = [{include = "advent_code_2022"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+black = {version = "^22.12.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
